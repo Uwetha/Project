@@ -1,11 +1,3 @@
-const myCarouselElement = document.querySelector('#myCarousel')
-
-        const carousel = new bootstrap.Carousel(myCarouselElement, {
-          interval: 5000,
-            touch: true
-    })
-
-
 var totalAmount = document.querySelectorAll(".totalAmount");
 var amuontByItem = document.querySelectorAll("input[name=totaltxtPrice]");
 var totalItem = document.querySelector(".totalQuantity");
