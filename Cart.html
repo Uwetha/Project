@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Food Website Cart</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="PWStyle.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color:burlywood;">
+            <div class="container">
+
+                <a href="/" class="navbar-brand">
+                    <img src="./assets/images/Logo-food.jpg" width="250px" height="auto"
+                        alt="FRESH FOOD" loading="lazy" class="d-inline-block align-top">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar"
+                    aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="myNavBar">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item active m-3 ">
+                            <a href="index.html" class="nav-link" >Home</a>
+                        </li>
+                        <li class="nav-item m-3">
+                            <a href="ExploreFood.html" class="nav-link">Explore Food</a>
+                        </li>
+                        <li class="nav-item m-3">
+                            <a href="Address.html" class="nav-link">Address</a>
+                        </li>
+                        <li class="nav-item m-3">
+                            <a href="Cart.html" class="nav-link">Cart</a>
+                        </li>
+                        <li class="nav-item m-3">
+                            <a href="Help.html" class="nav-link">Help FAQ </a>
+                        </li>
+                        <li class="nav-item m-3">
+                            <a class="btn btn-outline-danger" href="Contact.html" role="button"> <i class="fa fa-phone" aria-hidden="true"></i> +91 9957536472</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Section1 -->
+<div class="container-cart">
+            <span class="navbar-text m-3"><strong><h4> Total Shopping cart value :  &#8377<span class="totalAmount"></span></h4></strong></span>
+</div>
+
+
+<div class="container-fluid1">
+    <div class="card"></div>
+        <div class="card-header mx-auto w-50 shadow-lg rounded-3">
+            <h1 class="display-6">ORDER</h1>
+        </div>
+        <div class="card-body mx-auto w-50 shadow-lg rounded-3">
+            <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Food</th>
+                        <th>Price</th>
+                        <th class="text-center">Quantity</th>
+                    </tr>
+                </thead>
+                <tbody class="table-light">
+                    <tr>
+                        <td>1</td>
+                        <td>Dosai</td>
+                        <td>
+                            &#8377 <span class="txtPrice">50</span>
+                            <input type="hidden" name="txtPrice" value=50>
+                            <input type="hidden" name="totaltxtPrice" value=0>
+                        </td>
+                        <td class="text-center">
+                            <i class="bi bi-cart-dash text-danger"></i> &nbsp <input name="item" value=0 size="2"> &nbsp <i class="bi bi-cart-plus-fill text-success"></i>
+                            <input type="hidden" name="txtItem" value=0>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>2</td>
+                        <td>Idly</td>
+                        <td>
+                            &#8377 <span class="txtPrice">25</span>
+                            <input type="hidden" name="txtPrice" value=25>
+                            <input type="hidden" name="totaltxtPrice" value=0>
+                        </td>
+                        <td class="text-center">
+                            <i class="bi bi-cart-dash text-danger"></i> &nbsp <input name="item" value=0 size="2"> &nbsp <i class="bi bi-cart-plus-fill text-success"></i>
+                            <input type="hidden" name="txtItem" value=0>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Veg Biryani</td>
+                        <td>
+                            &#8377 <span class="txtPrice">70</span>
+                            <input type="hidden" name="txtPrice" value=70>
+                            <input type="hidden" name="totaltxtPrice" value=0>
+                        </td>
+                        <td class="text-center">
+                            <i class="bi bi-cart-dash text-danger"></i> &nbsp <input name="item" value=0 size="2"> &nbsp <i class="bi bi-cart-plus-fill text-success"></i>
+                            <input type="hidden" name="txtItem" value=0>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Chicken Biryani</td>
+                        <td>
+                            &#8377 <span class="txtPrice">150</span>
+                            <input type="hidden" name="txtPrice" value=150>
+                            <input type="hidden" name="totaltxtPrice" value=0>
+                        </td>
+                        <td class="text-center">
+                            <i class="bi bi-cart-dash text-danger"></i> &nbsp <input name="item" value=0 size="2"> &nbsp <i class="bi bi-cart-plus-fill text-success"></i>
+                            <input type="hidden" name="txtItem" value=0>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Butter Naan</td>
+                        <td>
+                            &#8377 <span class="txtPrice">60</span>
+                            <input type="hidden" name="txtPrice" value=60>
+                            <input type="hidden" name="totaltxtPrice" value=0>
+                        </td>
+                        <td class="text-center">
+                            <i class="bi bi-cart-dash text-danger"></i> &nbsp <input name="item" value=0 size="2"> &nbsp <i class="bi bi-cart-plus-fill text-success"></i>
+                            <input type="hidden" name="txtItem" value=0>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>Parotta</td>
+                        <td>
+                            &#8377 <span class="txtPrice">45</span>
+                            <input type="hidden" name="txtPrice" value=45>
+                            <input type="hidden" name="totaltxtPrice" value=0>
+                        </td>
+                        <td class="text-center">
+                            <i class="bi bi-cart-dash text-danger"></i> &nbsp <input name="item" value=0 size="2"> &nbsp <i class="bi bi-cart-plus-fill text-success"></i>
+                            <input type="hidden" name="txtItem" value=0>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-end">Total Amount : </td>
+                        <td>&#8377 <span class="totalAmount">0</span></td>
+                        <td>Total Quantity :   <span class="totalQuantity">&nbsp0</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="PWStyle.js"></script>
+</body>
+
+</html>
